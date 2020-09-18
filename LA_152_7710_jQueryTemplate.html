@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Sticky Footer Navbar Template · Bootstrap</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100" style="background-image: url('img/starwars.jpg');">
+  <header style="margin-bottom: 7rem;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item inactive">
+            <a class="nav-link" href="https://www.tesla.com/de_CH" target="_blank">Tesla</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="login.html" target="_blank">Sign up</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="LA_152_7710_jQueryTemplate.html">jQuery</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="LA_152_7714_jQueryOut.html">jQuery(7714)</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="la7715.html">LA-7715</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="la7716.html">LA-7716</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="LA_152_7718_Canvas.html">Canvas</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="la7750.html">Müzik</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="sound.html">Sound</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="la7751.html">la7751</a>
+          </li>
+          <li class="nav-item inactive">
+            <a class="nav-link" href="video.html">Video</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0" style="margin-right:5rem">
+          <canvas id="canvas" width="100" height="100" style="background-color:#333"></canvas>
+        </form>
+        <script src="js/canvasclock.js"></script>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container" style="color: wheat">
+      <h1 class="mt-5">Meine jQuery Webseite mit Bootstrap</h1>
+      <p class="lead">Startseite</p>
+      <p class="lead">Auf diesen Absatz kann reagiert werden</p>
+    </div>
+    <div id="customers">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr style="color: wheat">
+            <th>Vorname</th>
+            <th>Nachname</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Susanne</td>
+            <td>Muster</td>
+          </tr>
+          <tr>
+            <td>Rudi</td>
+            <td>Rüssel</td>
+          </tr>
+          <tr>
+            <td>Bert</td>
+            <td>Baumann</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">&copy; Alexnader Spiridonow 2020</span>
+    </div>
+  </footer>
+  <script>window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+  $(this).children('td').css("background-color", "white");
+  $('td').hover(function () {
+    $(this).css("background-color", "white");
+  });
+  $('tr').mouseleave(function () {
+    $(this).children('td').css("background-color", "white");// or whatever
+    $(this).children('td').removeAttr("style");
+  });
+  i = 0;
+  $("p").click(function () {
+    console.log("Die Anzahl für die Klicks.");
+  });
+  y = 0;
+  $("p").hover(function () {
+    console.log("Die Anzahl für der Überfahrungen.");
+  });
+  $(document).ready(function () {
+    alert("Hallo");
+  })
+  crossOrigin: null
+</script>
+
+</html>
