@@ -1,0 +1,46 @@
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+  }
+
+  #traget{
+    width: 400px;
+    height: 400px;
+    background: #EFCF8B;
+  }
+  #textxy {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: red;
+    font-size: 14px;
+  }
+  #bild{
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+

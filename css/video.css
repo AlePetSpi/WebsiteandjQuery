@@ -1,0 +1,7 @@
+#backgroundvideo {
+    position:fixed;
+    z-index: -10;
+/*not work if the screen ratio is below 16/9*/
+    width:100%;     
+    height: auto;
+}
